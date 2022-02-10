@@ -10,4 +10,4 @@ local kp = (import 'kube-prometheus/main.libsonnet') + {
 [kp.prometheusOperator[name] for name in std.objectFields(kp.prometheusOperator)] +
 [kp.nodeExporter[name] for name in std.objectFields(kp.nodeExporter)] +
 [kp.kubeStateMetrics[name] for name in std.objectFields(kp.kubeStateMetrics)] +
-[kp.prometheus[name] for name in std.objectFields(kp.prometheus)] +
+[kp.prometheus[name] for name in std.objectFields(kp.prometheus)]
